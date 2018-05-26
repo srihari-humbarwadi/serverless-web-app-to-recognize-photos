@@ -36,3 +36,12 @@ document.getElementById('button').addEventListener('click', function() {
 	upload(files[0]);
   }
 });
+
+$(document).ready(function(){
+  $('.button-collapse').sideNav({
+      menuWidth: 200, 
+      edge: 'left',    
+    }
+  );
+
+ });
