@@ -37,11 +37,11 @@ document.getElementById('button').addEventListener('click', function() {
   }
 });
 
-$(document).ready(function(){
-  $('.button-collapse').sideNav({
-      menuWidth: 200, 
-      edge: 'left',    
-    }
-  );
+function PreviewImage() {
+    var oFReader = new FileReader();
+    oFReader.readAsDataURL(document.getElementById("img").files[0]);
 
- });
+    oFReader.onload = function (oFREvent) {
+        document.getElementById("preview-image").src = oFREvent.target.result;
+    };
+};
