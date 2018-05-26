@@ -45,3 +45,7 @@ function PreviewImage() {
         document.getElementById("preview-image").src = oFREvent.target.result;
     };
 };
+
+$(document).ready(function(){
+$('.materialboxed').materialbox();
+});
