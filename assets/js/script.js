@@ -47,8 +47,9 @@ function postimage(image){
 					result += " Are you even a man? where's your facial hair??.<br>"
 				}
 			}
+			result += " You are " + smile_res + "<br>";
 			if(mouthopen.Value == true)
-			result += " You could just close your mouth and look more presentable!!<br>"
+			result += " You could just close your mouth and look more presentable!!<br>";
 			document.getElementById('api-res').innerHTML = result;
 			$('.modal').modal('open');
 			}

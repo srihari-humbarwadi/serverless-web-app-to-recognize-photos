@@ -3,4 +3,19 @@
 }
 .modal {  
 	max-height: 40% !important ; 
-	overflow: hidden !important ;}  
+	overflow: hidden !important ;
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.materialized {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     -moz-transform: translate(-50%, -50%)
+     -webkit-transform: translate(-50%, -50%)
+     -ms-transform: translate(-50%, -50%)
+     -o-transform: translate(-50%, -50%)
+     transform: translate(-50%, -50%);
+}
